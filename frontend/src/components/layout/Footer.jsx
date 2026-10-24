@@ -34,6 +34,9 @@ export default function Footer() {
           <div>
             <span className="eyebrow">LET’S CONNECT</span>
             <a href={business.tel}>{business.phone}</a>
+            <a className="contact-email" href={`mailto:${business.email}`}>
+              {business.email}
+            </a>
             <a href={business.whatsapp}>
               WhatsApp <ArrowUpRight size={15} />
             </a>

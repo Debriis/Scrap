@@ -807,6 +807,15 @@ footer {
 .contact-info {
   padding-top: 30px;
 }
+.contact-email {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.contact-info > .contact-email {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+}
 .contact-map {
   display: block;
   width: 100%;

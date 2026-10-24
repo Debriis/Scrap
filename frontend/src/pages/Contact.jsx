@@ -28,6 +28,9 @@ export default function Contact() {
           <a className="text-link" href={business.whatsapp}>
             Start a WhatsApp conversation <ArrowUpRight size={18} />
           </a>
+          <a className="text-link contact-email" href={`mailto:${business.email}`}>
+            {business.email} <ArrowUpRight size={18} />
+          </a>
           <div>
             <span className="eyebrow">COME FIND US</span>
             <p>{business.address}</p>
