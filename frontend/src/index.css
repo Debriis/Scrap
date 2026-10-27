@@ -1532,3 +1532,25 @@ fieldset:disabled {
   }
 }
 
+/* Selected AK industrial logo: scalable, with a light wordmark over the hero. */
+.brand-logo { display: inline-flex; align-items: center; gap: 10px; color: #111; }
+.brand-mark { display: block; width: 60px; height: 36px; flex-shrink: 0; }
+.brand-logo-type { display: flex; flex-direction: column; gap: 5px; }
+.brand-logo-name { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 29px; line-height: .9; font-weight: 700; letter-spacing: -.055em; }
+.brand-logo-caption { font-family: Inter, Arial, sans-serif; color: #d82e30; font-size: 8px; font-weight: 700; line-height: 1; letter-spacing: .24em; white-space: nowrap; }
+.on-hero .brand-logo { color: #fff; }
+.footer-brand .brand-logo { gap: 12px; }
+.footer-brand .brand-mark { width: 76px; height: 46px; }
+.footer-brand .brand-logo-name { font-size: 36px; }
+.footer-brand .brand-logo-caption { font-size: 10px; }
+@media (max-width: 760px) {
+  .wordmark .brand-logo { gap: 6px; }
+  .wordmark .brand-mark { width: 46px; height: 30px; }
+  .wordmark .brand-logo-name { font-size: 23px; }
+  .wordmark .brand-logo-caption { font-size: 6px; letter-spacing: .22em; }
+}
+@media (max-width: 360px) {
+  .wordmark .brand-mark { width: 38px; height: 27px; }
+  .wordmark .brand-logo-name { font-size: 21px; }
+  .wordmark .brand-logo-caption { font-size: 5.5px; }
+}

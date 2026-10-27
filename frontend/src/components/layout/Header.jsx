@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, Menu, X } from "lucide-react";
+import BrandLogo from "../ui/BrandLogo";
 const links = [
   ["/", "Home"],
   ["/about", "About"],
@@ -59,14 +60,9 @@ export default function Header() {
         <Link
           to="/"
           className="wordmark"
-          aria-label="Ankit Trading Company home"
+          aria-label="Ankit Kabad Shop — Ankit Trading Company home"
         >
-          <span className="brand-symbol">
-            a<span>↗</span>
-          </span>
-          <span>
-            ANKIT<span className="brand-sub">TRADING COMPANY</span>
-          </span>
+          <BrandLogo />
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">
           {links.map(([url, label]) => (

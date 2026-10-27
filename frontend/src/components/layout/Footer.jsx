@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { business } from "../../config/business";
+import BrandLogo from "../ui/BrandLogo";
 export default function Footer() {
   return (
     <footer>
       <div className="container">
         <div className="footer-grid">
           <div>
-            <Link to="/" className="footer-brand">
-              ANKIT<span className="red">↗</span>
-              <small>TRADING COMPANY</small>
+            <Link to="/" className="footer-brand" aria-label="Ankit Kabad Shop home">
+              <BrandLogo />
             </Link>
             <p>
               Giving materials a way forward.
