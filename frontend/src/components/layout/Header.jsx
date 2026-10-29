@@ -60,7 +60,7 @@ export default function Header() {
         <Link
           to="/"
           className="wordmark"
-          aria-label="Ankit Kabad Shop — Ankit Trading Company home"
+          aria-label="ATC home"
         >
           <BrandLogo />
         </Link>

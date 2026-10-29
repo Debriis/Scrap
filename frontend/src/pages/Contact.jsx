@@ -1,7 +1,8 @@
 import { PageIntro } from "../components/ui/Shared";
 import InquiryForm from "../components/contact/InquiryForm";
 import { business } from "../config/business";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import Instagram from "../components/ui/InstagramIcon";
 export default function Contact() {
   return (
     <>
@@ -22,18 +23,21 @@ export default function Contact() {
         <aside className="contact-info">
           <span className="eyebrow">A DIRECT CONNECTION</span>
           <a className="contact-phone" href={business.tel}>
+            <Phone size={22} aria-hidden="true" />
             {business.phone}
-            <ArrowUpRight />
           </a>
           <a className="text-link" href={business.whatsapp}>
-            Start a WhatsApp conversation <ArrowUpRight size={18} />
+            <MessageCircle size={18} aria-hidden="true" /><span>Start a WhatsApp conversation</span>
           </a>
           <a className="text-link contact-email" href={`mailto:${business.email}`}>
-            {business.email} <ArrowUpRight size={18} />
+            <Mail size={18} aria-hidden="true" /><span>{business.email}</span>
+          </a>
+          <a className="text-link contact-social" href={business.instagram} target="_blank" rel="noreferrer">
+            <Instagram size={18} aria-hidden="true" /><span>{business.instagramHandle}</span>
           </a>
           <div>
             <span className="eyebrow">COME FIND US</span>
-            <p>{business.address}</p>
+            <p className="contact-icon-row"><MapPin size={18} aria-hidden="true" /><span>{business.address}</span></p>
             <a
               className="text-link"
               href={business.maps}

@@ -3,6 +3,8 @@ export const business = {
   phone: "+91 98828 18832",
   tel: "tel:+919882818832",
   whatsapp: "https://wa.me/919882818832",
+  instagram: "https://www.instagram.com/ankit_ratan_bhardwaj/",
+  instagramHandle: "@ankit_ratan_bhardwaj",
   email: "ankitsharma18832@gmail.com",
   gstin: "02MLRPS0462A1Z3",
   address:

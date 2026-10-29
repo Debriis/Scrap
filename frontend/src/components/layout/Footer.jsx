@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import Instagram from "../ui/InstagramIcon";
 import { business } from "../../config/business";
 import BrandLogo from "../ui/BrandLogo";
 export default function Footer() {
@@ -8,7 +9,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <Link to="/" className="footer-brand" aria-label="Ankit Kabad Shop home">
+            <Link to="/" className="footer-brand" aria-label="ATC home">
               <BrandLogo />
             </Link>
             <p>
@@ -26,19 +27,22 @@ export default function Footer() {
           </div>
           <div>
             <span className="eyebrow">FIND US</span>
-            <p>{business.address}</p>
+            <p className="contact-icon-row"><MapPin size={18} aria-hidden="true" /><span>{business.address}</span></p>
             <a href={business.maps} target="_blank" rel="noreferrer">
               Get directions <ArrowUpRight size={15} />
             </a>
           </div>
           <div>
             <span className="eyebrow">LET’S CONNECT</span>
-            <a href={business.tel}>{business.phone}</a>
+            <a href={business.tel}><Phone size={18} aria-hidden="true" />{business.phone}</a>
             <a className="contact-email" href={`mailto:${business.email}`}>
-              {business.email}
+              <Mail size={18} aria-hidden="true" /><span>{business.email}</span>
             </a>
             <a href={business.whatsapp}>
-              WhatsApp <ArrowUpRight size={15} />
+              <MessageCircle size={18} aria-hidden="true" />WhatsApp <ArrowUpRight size={15} aria-hidden="true" />
+            </a>
+            <a className="contact-social" href={business.instagram} target="_blank" rel="noreferrer">
+              <Instagram size={18} aria-hidden="true" /><span>{business.instagramHandle}</span>
             </a>
             <p className="gst">
               GSTIN

@@ -1,23 +1,12 @@
-export function BrandMark() {
-  return (
-    <svg className="brand-mark" viewBox="0 0 140 72" fill="none" aria-hidden="true">
-      <path d="M2 68 43 4h18L24 68H2Z" fill="#D82E30" />
-      <path d="m34 53 9-15h16l9 15H34Z" fill="#D82E30" />
-      <path d="M46 4h19l24 40V17L106 4v64H84L46 4Z" fill="currentColor" />
-      <path d="m109 28 25-24h-23L94 21v23l15-16Z" fill="#D82E30" />
-      <path d="m110 36 28 32h-25L96 49l14-13Z" fill="currentColor" />
-    </svg>
-  );
-}
-
 export default function BrandLogo() {
   return (
     <span className="brand-logo" aria-hidden="true">
-      <BrandMark />
-      <span className="brand-logo-type">
-        <span className="brand-logo-name">ANKIT</span>
-        <span className="brand-logo-caption">KABAD SHOP</span>
-      </span>
+      <svg className="brand-logo-image" viewBox="0 0 152 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 56 38 2l9 15L21 56H2Zm23 0 13-20 13 20H25Zm16-28 8-12 23 40H56L41 28Z" fill="#ed171f" />
+        <path d="M44 2h66L96 16H82v40H67V16H52L44 2Z" fill="currentColor" />
+        <path d="m87 30 31-28h32l-14 13h-13l-22 21-14-6Z" fill="#ed171f" />
+        <path d="m88 33 14 6 6 5h27l12 12h-45L88 43V33Z" fill="currentColor" />
+      </svg>
     </span>
   );
 }
