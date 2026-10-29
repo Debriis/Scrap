@@ -96,14 +96,13 @@ export default function Header() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
           >
-            {links.map(([url, label], i) => (
+            {links.map(([url, label]) => (
               <NavLink
                 key={url}
                 to={url}
                 onClick={() => setOpen(false)}
                 end={url === "/"}
               >
-                <span>0{i + 1}</span>
                 {label}
                 <ArrowUpRight />
               </NavLink>

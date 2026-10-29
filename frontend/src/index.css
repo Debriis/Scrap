@@ -318,10 +318,6 @@ main:focus {
   font-family: "Space Grotesk";
   font-size: 30px;
 }
-.mobile-menu > a > span {
-  font: 10px Inter;
-  color: var(--muted);
-}
 .mobile-menu > a > svg {
   margin-left: auto;
 }
